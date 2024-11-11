@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Dating App</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            justify-content: center;
+        }
+        h1 {
+            color: #0d47a1;
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 1em;
+            color: #1565c0;
+            margin-top: 0;
+        }
+        #message {
+            margin-top: 15px;
+            font-size: 1.1em;
+            color: #388e3c;
+            display: none;
+            font-weight: bold;
+        }
+        .input-field {
+            margin-top: 15px;
+            padding: 12px;
+            width: 220px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px 24px;
+            font-size: 1em;
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 220px;
+        }
+        button:hover {
+            background-color: #1565c0;
+        }
+        img {
+            margin-top: 15px;
+            width: 220px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to SoulMatching</h1>
+    <p class="subtitle">This is page 3 for kecen of A3a dating app</p>
+
+    <input type="text" class="input-field" placeholder="Username" required>
+    <input type="password" class="input-field" placeholder="Password" required>
+
+    <button onclick="showMessage()">Log In</button>
+    <p id="message">You are now logged in</p>
+    <img src="th.jpg" alt="User Image">
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
